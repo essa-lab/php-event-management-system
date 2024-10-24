@@ -34,8 +34,16 @@ The **Event Management System** is a web-based application designed to simplify 
     charset=charset
     ```
 
+3. **Import the Database Schema**:
+    - Locate the `tables.sql` file in the `base` folder.
+    - Use the following MySQL command to import the SQL schema:
+      ```bash
+      mysql -u userName -p databaseName < ./tables.sql
+      ```
 
-3. **Start the Development Server**:
+
+
+4. **Start the Development Server**:
     To run the project locally, use:
     ```bash
     php -S localhost:8000 -t public/.
